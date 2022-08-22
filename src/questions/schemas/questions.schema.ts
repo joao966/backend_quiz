@@ -6,7 +6,10 @@ export type questionsDocument = questions & Document;
 @Schema()
 export class questions {
   @Prop()
-  questions: string[];
+  questions: string;
+
+  @Prop()
+  options: string[];
 
   @Prop()
   answers: string;
