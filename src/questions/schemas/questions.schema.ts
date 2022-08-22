@@ -6,10 +6,10 @@ export type questionsDocument = questions & Document;
 @Schema()
 export class questions {
   @Prop()
-  questions: string;
+  questions: string[];
 
   @Prop()
-  answers: number;
+  answers: string;
 }
 
 export const questionsSchema = SchemaFactory.createForClass(questions);
